@@ -42,7 +42,7 @@ app.ticker.add(updata, this);
 //new TestTextFillBlanks(app, uiStage);
 //new TestFilterAlpha(app, uiStage);
 //new TestAdjustmentFilter(app, uiStage);
-//new TestColorMatrixFilter(app, uiStage);
+new TestColorMatrixFilter(app, uiStage);
 //new TestBlurFilter(app, uiStage);
 //new TestDisplacementFilter(app, uiStage);//暂停中 因为构造函数不能传餐
 //new TestFxaaFilter(app, uiStage);
@@ -52,5 +52,5 @@ app.ticker.add(updata, this);
 //new TestAsciiFilter(app, uiStage);
 //new TestBevelFilter(app, uiStage);
 //new TestBloomFilter(app, uiStage);
-new TestBulgePinchFilter(app, uiStage);
+//new TestBulgePinchFilter(app, uiStage);
 

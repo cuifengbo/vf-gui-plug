@@ -30,7 +30,7 @@ export class TestColorMatrixFilter {
              When the value is 0, the original color is used without modification. When the value is 1, the result color is used. When in the range (0, 1) the color is interpolated between the original and result by this amount.
              Default Value: 1
              */
-            rect.style.filter.ColorMatrixFilter.alpha = 1;
+            rect.style.filter.ColorMatrixFilter.alpha = 0;
 
             /**
              * autoFit boolean inherited
@@ -84,23 +84,11 @@ export class TestColorMatrixFilter {
              */
             rect.style.filter.ColorMatrixFilter.resolution = 1;
 
-            /**
-             *  uniforms object readonly inherited
-            Shader uniform values, shortcut for uniformGroup.uniforms
-             */
-            rect.style.filter.ColorMatrixFilter.uniforms;
-
+           
 
             //方法们
-            /**
-             *  _loadMatrix(matrix, multiply)
-             Transforms current matrix and set the new one
-             matrix	Array.< number >   5x4 matrix       
-             multiply	boolean	false
-             if true, current matrix and matrix are multiplied.If false, just set the current matrix with @param matrix
-             */
-            rect.style.filter.ColorMatrixFilter._loadMatrix();
-
+           
+           
             /**
              *  blackAndWhite(multiply)
              Set the black and white matrice.
@@ -307,11 +295,12 @@ export class TestColorMatrixFilter {
             pic.src = './assets/dino.png';
 
             uiStage.addChild(pic);
-            pic.style.filter.ColorMatrixFilter.matrix = [1, 1, 9, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]
-           // pic.style.filter.ColorMatrixFilter.vintage();
+           // pic.style.filter.ColorMatrixFilter.matrix = [1, 1, 9, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]
+            //pic.style.filter.ColorMatrixFilter.blackAndWhite();
+            pic.style.filter.ColorMatrixFilter._blackAndWhite = true;
             //pic.style.filter.ColorMatrixFilter.hue(90,true);
             setInterval(() => {
-                pic.style.filter.ColorMatrixFilter.matrix = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random()]
+                //pic.style.filter.ColorMatrixFilter.matrix = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random()]
             }, 500)
         });
 
