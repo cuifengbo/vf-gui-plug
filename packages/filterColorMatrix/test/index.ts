@@ -297,7 +297,7 @@ export class TestColorMatrixFilter {
             uiStage.addChild(pic);
            // pic.style.filter.ColorMatrixFilter.matrix = [1, 1, 9, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]
             //pic.style.filter.ColorMatrixFilter.blackAndWhite();
-            pic.style.filter.ColorMatrixFilter._blackAndWhite = true;
+            pic.style.filter.ColorMatrixFilter._blackAndWhite = 1;
             //pic.style.filter.ColorMatrixFilter.hue(90,true);
             setInterval(() => {
                 //pic.style.filter.ColorMatrixFilter.matrix = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random()]

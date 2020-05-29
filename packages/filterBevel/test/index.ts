@@ -56,7 +56,7 @@ export class TestBevelFilter{
             
             // Default Value:
             // 0x000000
-            rect.style.filter.BevelFilter.shadowAlpha = 0.7;
+            rect.style.filter.BevelFilter.shadowColor = 0.7;
 
             //  thickness number
             // The tickness of the bevel.

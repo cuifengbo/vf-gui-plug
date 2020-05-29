@@ -15,6 +15,16 @@ import {TestAsciiFilter} from './packages/filterAscii/test'
 import {TestBevelFilter} from './packages/filterBevel/test'
 import {TestBloomFilter} from './packages/filterBloom/test'
 import {TestBulgePinchFilter} from './packages/filterBulgePinch/test'
+import {TestColorOverlayFilter} from './packages/filterColorOverlay/test'
+import {TestColorReplaceFilter} from './packages/filterColorReplace/test'
+import {TestConvolutionFilter} from './packages/filterConvolution/test'
+import {TestCrossHatchFilter} from './packages/filterCrossHatch/test'
+import {TestCRTFilter} from './packages/filterCRT/test'
+import {TestDotFilter} from './packages/filterDot/test'
+import {TestDropShadowFilter} from './packages/filterDropShadow/test'
+import {TestEmbossFilter} from './packages/filterEmboss/test'
+import {TestGlitchFilter} from './packages/filterGlitch/test'
+
 
 
 var app = new vf.Application({ 
@@ -42,7 +52,7 @@ app.ticker.add(updata, this);
 //new TestTextFillBlanks(app, uiStage);
 //new TestFilterAlpha(app, uiStage);
 //new TestAdjustmentFilter(app, uiStage);
-new TestColorMatrixFilter(app, uiStage);
+//new TestColorMatrixFilter(app, uiStage);
 //new TestBlurFilter(app, uiStage);
 //new TestDisplacementFilter(app, uiStage);//暂停中 因为构造函数不能传餐
 //new TestFxaaFilter(app, uiStage);
@@ -53,4 +63,12 @@ new TestColorMatrixFilter(app, uiStage);
 //new TestBevelFilter(app, uiStage);
 //new TestBloomFilter(app, uiStage);
 //new TestBulgePinchFilter(app, uiStage);
+//new TestColorOverlayFilter(app, uiStage);
+//new TestConvolutionFilter(app, uiStage);
+//new TestCrossHatchFilter(app, uiStage);
+//new TestCRTFilter(app, uiStage);
+//new TestDotFilter(app, uiStage);
+//new TestDropShadowFilter(app, uiStage);
+//new TestEmbossFilter(app, uiStage);
+new TestGlitchFilter(app, uiStage);
 

@@ -637,7 +637,8 @@ export class ColorMatrixFilter extends vf.gui.Filter
     set _lsd(value:any){
         this.lsd(true);
     }
-    set _reset(value:any){
+    set 
+    (value:any){
         this.reset();
     }
 }
