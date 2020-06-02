@@ -24,7 +24,21 @@ import {TestDotFilter} from './packages/filterDot/test'
 import {TestDropShadowFilter} from './packages/filterDropShadow/test'
 import {TestEmbossFilter} from './packages/filterEmboss/test'
 import {TestGlitchFilter} from './packages/filterGlitch/test'
-
+import {TestGlowFilter} from './packages/filterGlow/test'
+import {TestGodrayFilter} from './packages/filterGodray/test'
+import {TestMotionBlurFilter} from './packages/filterMotionBlur/test'
+import {TestMultiColorReplaceFilter} from './packages/filterMultiColorReplace/test'
+import {TestOldFilmFilter} from './packages/filterOldFilm/test'
+import {TestOutlineFilter} from './packages/filterOutline/test'
+import {TestPixelateFilter} from './packages/filterPixelate/test'
+import {TestRadialBlurFilter} from './packages/filterRadialBlur/test'
+import {TestReflectionFilter} from './packages/filterReflection/test'
+import {TestRGBSplitFilter} from './packages/filterRGBSplit/test'
+import {TestShockwaveFilter} from './packages/filterShockwave/test'
+import {TestSimpleLightmapFilter} from './packages/filterSimpleLightmap/test'
+import {TestTiltShiftFilter} from './packages/filterTiltShift/test'
+import {TestTwistFilter} from './packages/filterTwist/test'
+import {TestZoomBlurFilter} from './packages/filterZoomBlur/test'
 
 
 var app = new vf.Application({ 
@@ -70,5 +84,19 @@ app.ticker.add(updata, this);
 //new TestDotFilter(app, uiStage);
 //new TestDropShadowFilter(app, uiStage);
 //new TestEmbossFilter(app, uiStage);
-new TestGlitchFilter(app, uiStage);
-
+//new TestGlitchFilter(app, uiStage);
+//new TestGlowFilter(app, uiStage);
+//new TestGodrayFilter(app, uiStage);
+//new TestMotionBlurFilter(app, uiStage);
+//new TestMultiColorReplaceFilter(app, uiStage);
+//new TestOldFilmFilter(app, uiStage);
+//new TestOutlineFilter(app, uiStage);
+//new TestPixelateFilter(app, uiStage);
+//new TestRadialBlurFilter(app, uiStage);
+//new TestReflectionFilter(app, uiStage);
+//new TestRGBSplitFilter(app, uiStage);
+//new TestShockwaveFilter(app, uiStage);
+//new TestSimpleLightmapFilter(app, uiStage);
+//new TestTiltShiftFilter(app, uiStage);
+//new TestTwistFilter(app, uiStage);
+new TestZoomBlurFilter(app, uiStage);
